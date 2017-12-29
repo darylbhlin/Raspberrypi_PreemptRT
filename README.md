@@ -4,7 +4,7 @@
 將Raspberry換成preempt RT patch的real time linux kernel，以下為linux kernel 4.14.7的例子
 
 * 下載最新版[raspbian](https://www.raspberrypi.org/downloads/raspbian/)，可利用Win32DiskImager將img檔燒進SD卡
-* 在raspberry pi環境下輸入以下指令可升級至最新kernel版本(2017/12/29
+* 在raspberry pi環境下輸入以下指令可升級至最新kernel版本
 ```
 sudo BRANCH=next rpi-update
 ```
