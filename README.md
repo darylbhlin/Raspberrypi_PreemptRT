@@ -18,7 +18,7 @@
     * ( Enable _RCU_BOOST_ ) General Setup => RCU Subsystem => Make expert-level adjustments to RCU configuration
   * make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- zImage modules dtbs
 * 將cross-compile好的image和modules放到板子上
-  * cp arch/arm/boot/zImage [sd_card_path]/boot/kernel7.img
+  * cp arch/arm/boot/zImage [sd_card_path]/boot/kernel7.img
   * make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- INSTALL_MOD_PATH=[sd_card_path]/rootfs modules_install
 * 如果只做到這樣，會發現real time版本非常不穩定，常常開機失敗或者當機，要添加以下內容至boot/cmdline.txt，參考https://wiki.linuxfoundation.org/realtime/documentation/known_limitations
   * dwc_otg.fiq_fsm_enable=0 dwc_otg.fiq_enable=0 dwc_otg.nak_holdoff=0
