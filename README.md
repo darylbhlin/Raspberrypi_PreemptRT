@@ -14,6 +14,8 @@
   * export PATH=$PATH:[your_raspberry_path]/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin
   * make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- bcm2709_defconfig
   * make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- menuconfig
+    + ( Enable _PREEMPT_RT_FULL_ ) Kernel Features => Preemption Model => Fully Preemptable Kernel (RT)
+    * ( Enable _RCU_BOOST_ ) General Setup => RCU Subsystem => Make expert-level adjustments to RCU configuration
   * make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- zImage modules dtbs
 * 將cross-compile好的image和modules放到板子上
   * cp arch/arm/boot/zImage [sd_card_path]/boot/kernel7.img
