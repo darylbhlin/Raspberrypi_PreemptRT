@@ -7,7 +7,7 @@
 * 在raspberry pi環境下輸入以下指令可升級至最新kernel版本(2017/12/29
   + sudo BRANCH=next rpi-update
 * Host端的Ubuntu/Debian(64bits)環境下載linux kernel/cross compile tools，並開始cross-compile
-  * git clone --depth=1 https://github.com/raspberrypi/linux
+  * git clone --depth=1 https://github.com/raspberrypi/linux
   * git clone https://github.com/raspberrypi/tools
   * cd linux
   * export KERNEL=kernel7
